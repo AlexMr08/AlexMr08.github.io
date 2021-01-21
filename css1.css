@@ -3,10 +3,7 @@ p {
     color: aqua;
     font-style: italic;
 }
-#contenedor {
-    
-    height: 100%;
-    width: 100%;
+body {
     background-color: black;
 
 }
