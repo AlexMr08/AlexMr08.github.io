@@ -1,0 +1,94 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: #FDFDFD;
+    color: #000000;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main {
+    width: 80%;
+    margin: 55px auto;
+}
+
+main section {
+    margin: 10px 0;
+}
+
+.titu{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    color: #ff0062;
+}
+
+h5 {
+    color: #141414d8;
+    font-weight: bold;
+}
+
+hr{
+    display: none;
+    
+}
+
+h2,
+h3,
+h4 {
+    padding: 2px 0;
+    margin: 0%;
+}
+
+@media (max-width: 768px){
+    main {
+        width: 90%;
+        margin: 60px auto 0px;
+    }
+
+    body{
+        background-color: #eeeeee;
+    }
+
+    .samp{
+        display: none;
+    }
+}
+
+#contacto{
+    box-sizing: content-box;
+    background-color: #eeeeee;
+    border: #808080 1px solid;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#contacto form{
+    background-color: #eeeeee;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+form label{
+    cursor: pointer;
+    width: 50%;
+    box-sizing: border-box;
+
+}
+
+form textarea{
+    resize: none;
+    width: 80%;
+}

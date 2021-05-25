@@ -1,0 +1,50 @@
+#principal {
+    box-sizing: content-box;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 10px 0px;
+    width: 100%;
+    border: #808080 1px solid;
+}
+
+#principal h2 , h1{
+    text-align: center;
+}
+
+#principal img {
+    min-width: 50px;
+    width: 35%;
+    max-width: 500px;
+    float: right;
+    margin: 0px 10px 0px 10px;
+    box-sizing: border-box;
+}
+
+#principal h3{
+    margin: 10px;
+}
+
+#principal p {
+    margin: 10px;
+    text-align: justify;
+}
+@media (max-width: 768px){
+    #principal img {
+        display: block;
+        float: none;
+        margin: auto;
+        width: 95%;
+        max-width: unset;
+        border-radius: 10px;
+        
+    }
+
+    #principal h3{
+        text-align: center;
+        margin: 0%;
+    }
+
+    #principal{
+        border:  1px solid #808080;
+    }
+}
