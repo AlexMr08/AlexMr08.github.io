@@ -74,21 +74,3 @@ h4 {
     width: 100%;
 }
 
-#contacto form{
-    background-color: #eeeeee;
-    border-radius: 10px;
-    width: 100%;
-    margin: auto;
-}
-
-form label{
-    cursor: pointer;
-    width: 50%;
-    box-sizing: border-box;
-
-}
-
-form textarea{
-    resize: none;
-    width: 80%;
-}
