@@ -23,7 +23,11 @@ textarea, input, select{
     width: 100%;
     border-radius: 5px;
     vertical-align: text-top;
+    background-color: #ffffffdc;
+    border: 1px solid #2f2f2f;
+padding: 5px;
 }
+
 form label{
     cursor: pointer;
 }
