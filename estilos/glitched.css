@@ -34,7 +34,7 @@ h1 {
   left: 10px;
   width: 100%;
   height: 100%;
-  text-shadow: -2px 0 #ff0062;
+  text-shadow: -2px 0 #002fff;
   /* Creates an initial clip for our glitch. This works in
   a typical top,right,bottom,left fashion and creates a mask
   to only show a certain part of the glitch at a time. */
@@ -80,7 +80,7 @@ h1 {
   left: 8px;
   width: 100%;
   height: 100%;
-  text-shadow: -2px 0 #00ffdd, 2px 2px #ff9900;
+  text-shadow: -2px 0 #00ffdd, 2px 2px #a6ff00, 2px -2px #ffffff;
   animation: glitch-anim2 5s infinite linear alternate-reverse;
 }
 

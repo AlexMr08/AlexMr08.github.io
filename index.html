@@ -10,12 +10,11 @@
     <link href="./estilos/cabecera_pie.css" rel="stylesheet">
     <link href="./estilos/galeria.css" rel="stylesheet">
     <link href="./estilos/principal.css" rel="stylesheet">
-    <link href="./mascss.scss" rel="stylesheet">
-    <link href="./mierda.js" rel="stylesheet">
+    <link href="./estilos/media.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilos/albumes.css">
     <link rel="stylesheet" href="estilos/glitched.css">
     <link rel="stylesheet" href="estilos/datos.css">
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="estilos/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
@@ -29,14 +28,14 @@
 <body>
     <header id="cabecera">
         <nav>
-            <span>
+            <span id="menu">
                 <a href="#principal" class="glitch" data-text="Tracked">Tracked</a>
                 <a href="#albumes">Albumes</a>
                 <a href="#galeria">Galeria</a>
                 <a href="#datos">Datos</a>
                 <a href="#contacto">Contacto</a>
             </span>
-            <span>
+            <span id="rrss">
                 <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
                 <a href="https://es-es.facebook.com/"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
@@ -335,12 +334,12 @@
                                     src="https://embed.music.apple.com/mx/album/faucet-failure/1444958020?i=1444958547"></iframe>
                             </td>
                         </tr>
-                        <tr class="samp">
+                        <tr>
                             <td>J. Cole</td>
                             <td>i n t e r l u d e</td>
                             <td>38.046.621</td>
                             <td>27.376.369</td>
-                            <td>
+                            <td class="samp">
                                 <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="150"
                                     style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
                                     sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
