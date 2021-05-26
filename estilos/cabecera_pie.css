@@ -51,9 +51,9 @@ nav span a {
         display: flex;
         width: 100%;
         margin: 0%;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     #pie>.datos {
@@ -61,5 +61,6 @@ nav span a {
         max-width: unset;
         width: 50%;
         padding: 0px 10px;
+        
     }
 }

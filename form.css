@@ -14,6 +14,7 @@ form span{
     width: 50%;
     padding: 10px;
     text-align: center;
+    cursor: default;
 }
 form>#mensaje, form>#prot{
     width: 100%;
@@ -21,7 +22,12 @@ form>#mensaje, form>#prot{
 textarea, input, select{
     width: 100%;
     border-radius: 5px;
+    vertical-align: text-top;
 }
+form label{
+    cursor: pointer;
+}
+
 #genero input{
     width: initial;
 }
