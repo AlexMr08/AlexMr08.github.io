@@ -1,3 +1,4 @@
+/*Inicio html/body*/
 html {
     scroll-behavior: smooth;
 }
@@ -10,6 +11,8 @@ body {
     padding: 60px 0px 0px 0px;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+/*Fin html/body*/
 
 /*Inicio cabecera*/
 #cabecera {
@@ -234,7 +237,8 @@ a:hover {
 #contacto form {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
     width: 80%;
     margin: auto;
     padding: 5px;
@@ -262,7 +266,6 @@ select {
     background-color: #ffffffdc;
     border: 1px solid #2f2f2f;
     padding: 5px;
-    margin: 5px;
 }
 
 form label {
@@ -386,10 +389,7 @@ form select:focus {
 
     /*Inicio media datos*/
     #datos table {
-        font-size: 0.6em;
-    }
-
-    #datos table {
+        font-size: 0.5em;
         width: 95%;
     }
 
