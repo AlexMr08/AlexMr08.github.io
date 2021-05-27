@@ -54,6 +54,22 @@ main section {
 
 /*Fin main*/
 
+/*Estilos comunes*/
+#albumes,
+#galeria,
+#datos,
+#contacto,
+#principal {
+    box-sizing: border-box;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 10px 0px;
+    width: 100%;
+    border: #808080 1px solid;
+}
+
+/*Estilos comunes*/
+
 /*Inicio fuentes predefinidas*/
 
 .titu {
@@ -102,27 +118,14 @@ a:hover {
 /*Fin enlaces*/
 
 /*Inicio Tracked*/
-#principal {
-    box-sizing: content-box;
-    background-color: #eeeeee;
-    border-radius: 10px;
-    padding: 10px 0px;
-    width: 100%;
-    border: #808080 1px solid;
-}
-
-#principal h2,
-h1 {
-    text-align: center;
-}
-
 #principal img {
     min-width: 50px;
     width: 35%;
     max-width: 500px;
     float: right;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 15px 0px 10px;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 #principal h3 {
@@ -142,11 +145,6 @@ h1 {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    box-sizing: content-box;
-    background-color: #eeeeee;
-    border: #808080 1px solid;
-    border-radius: 10px;
-    width: 100%;
 }
 
 #albumes article {
@@ -161,19 +159,14 @@ h1 {
     max-width: 500px;
     border-radius: 10px;
     border: #808080 solid 1px;
+    box-shadow: 0 0px 10px 2px #808080;
 }
 
 /*Fin albumes*/
 
 /*Inicio galeria*/
-#galeria {
-    background-color: #eeeeee;
-    border: #808080 1px solid;
-    border-radius: 10px;
-    width: 100%;
-}
-
 #galeria article {
+    box-sizing: border-box;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -187,32 +180,21 @@ h1 {
     max-width: 300px;
     box-sizing: border-box;
     margin: 5px;
+    border: #808080 1px solid;
+    box-shadow: 0 0px 10px 2px #808080;
 }
 
 /*Fin galeria*/
 
 /*Inicio datos*/
-#datos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
-    box-sizing: content-box;
-    background-color: #eeeeee;
-    border: #808080 1px solid;
-    border-radius: 10px;
-    width: 100%;
-    padding: 0px 0px;
-}
-
 #datos table {
     border: solid 1px #808080;
     text-align: center;
     border-collapse: collapse;
     border-spacing: 0;
     cursor: default;
-    width: 100%;
-    margin: 20px auto;
+    width: 95%;
+    margin: 5px auto;
     box-shadow: 4px 3px 13px 1px rgba(0, 0, 0, 0.342);
 }
 
@@ -251,15 +233,6 @@ h1 {
 /*Fin datos*/
 
 /*Inicio contacto*/
-
-#contacto {
-    box-sizing: content-box;
-    background-color: #eeeeee;
-    border: #808080 1px solid;
-    border-radius: 10px;
-    width: 100%;
-}
-
 #contacto form {
     display: flex;
     flex-wrap: wrap;
@@ -291,6 +264,7 @@ select {
     background-color: #ffffffdc;
     border: 1px solid #2f2f2f;
     padding: 5px;
+    margin: 5px;
 }
 
 form label {
@@ -310,6 +284,18 @@ button {
     width: 150px;
     border-radius: 5px;
     margin: auto;
+}
+
+form button:focus,
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    box-shadow: 0 0 3px 1px #ff0062;
+}
+
+form input[type=radio] {
+    box-shadow: none;
 }
 
 /*Fin contacto*/
@@ -334,108 +320,73 @@ button {
 /*Inicio media*/
 
 @media (max-width:768px) {
-    nav {
+
+    /*Inicio media nav y pie*/
+    nav,
+    footer {
         font-size: 0.7em;
     }
 
-    main {
-        width: 90%;
-        margin: 60px auto 0px;
-    }
-
-    body {
-        background-color: #eeeeee;
-    }
-
-    .samp {
-        display: none;
-    }
-
-    #contacto form span {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-    }
-
     #pie {
-        display: flex;
-        margin: 0%;
         justify-content: space-between;
         flex-wrap: wrap;
-        font-size: 0.8em;
     }
 
     #pie>.datos {
-        box-sizing: border-box;
         max-width: unset;
         width: 50%;
-        padding: 0px 10px;
+        padding: 0px 15px;
 
     }
+    /*fin media nav y pie*/
 
-    #albumes article {
+    /*Inicio media main*/
+    main {
         width: 95%;
-        margin: 5px 0px;
+        margin: 60px auto 0px;
         box-sizing: border-box;
-        padding: 5px 20px;
-        text-align: center;
-        border-radius: 10px;
     }
+    /*Fin media main*/
 
-    #albumes article img {
-        width: 100%;
-        border-radius: 10px;
-        border: #808080 solid 1px;
-    }
+    /*Inicio Media albumes*/
 
+    /*Fin media albumes*/
+
+    /*Inicio media galeria*/
     #galeria {
-        display: flex;
-        box-sizing: content-box;
-        background-color: #eeeeee;
-        border: #808080 1px solid;
-        border-radius: 10px;
         width: 100%;
-        flex-wrap: wrap;
-        align-content: center;
-
-        justify-content: center;
     }
 
-    #galeria article {
+    #galeria article, #albumes article, #principal article {
         width: 95%;
-        margin: 5px 0px;
-        box-sizing: border-box;
+        margin: 5px auto;
         padding: 5px 20px;
-        text-align: center;
     }
 
     #galeria article img {
         margin: 10px 0px;
         width: 100%;
-        border-radius: 10px;
         border: #808080 solid 1px;
+        max-width: unset; /**/
     }
+    /*Fin media galeria*/
 
+    /*Inicio media principal*/
     #principal img {
         display: block;
         float: none;
         margin: auto;
         width: 95%;
         max-width: unset;
-        border-radius: 10px;
-
     }
 
     #principal h3 {
         text-align: center;
-        margin: 0%;
     }
 
-    #principal {
-        border: 1px solid #808080;
-    }
+    /*Fin media principal*/
 
+    /*Inicio media datos*/
     #datos table {
         font-size: 0.5em;
         width: 100%;
@@ -443,12 +394,17 @@ button {
 
     #datos table {
         width: 95%;
-        box-sizing: border-box;
-        padding: 5px 20px;
-        ;
-        border: #808080 solid 1px;
-        border-radius: 10px;
     }
-}
 
+    .samp {
+        display: none;
+    }
+    /*Fin media datos*/
+
+    /*Inicio media contacto*/
+    #contacto form span {
+        width: 100%;
+    }
+    /*Fin media contacto*/
+}
 /*Fin media*/
