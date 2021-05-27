@@ -78,8 +78,10 @@ main section {
     text-align: center;
 }
 
-h2.h3,h4,h5{
-    padding: 2px 0; 
+h2.h3,
+h4,
+h5 {
+    padding: 2px 0;
 }
 
 h4 {
@@ -104,9 +106,10 @@ a:hover {
     text-decoration: underline;
 }
 
-a:active{
+a:active {
     color: #ff0062;
 }
+
 /*Fin enlaces*/
 
 /*Inicio Tracked*/
@@ -212,8 +215,9 @@ a:active{
     background: #dfdfdf;
 }
 
-#datos tbody tr:hover, #datos tbody td:hover {
-    background: #ff00621a ;
+#datos tbody tr:hover,
+#datos tbody td:hover {
+    background: #ff00621a;
 }
 
 /*Fin datos*/
@@ -303,7 +307,7 @@ form select:focus {
     text-align: center;
 }
 
-li{
+li {
     text-align: left;
 }
 
