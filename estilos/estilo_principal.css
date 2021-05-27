@@ -167,12 +167,6 @@ h1 {
 
 /*Inicio galeria*/
 #galeria {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
-
-    box-sizing: content-box;
     background-color: #eeeeee;
     border: #808080 1px solid;
     border-radius: 10px;
@@ -180,18 +174,16 @@ h1 {
 }
 
 #galeria article {
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    box-sizing: content-box;
-    background-color: #eeeeee;
     border-radius: 10px;
     width: 95%;
 }
 
 #galeria img {
-
     max-width: 300px;
     box-sizing: border-box;
     margin: 5px;
