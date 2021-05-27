@@ -237,6 +237,7 @@ a:hover {
 #contacto form {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 80%;
     margin: auto;
     padding: 5px;
@@ -244,8 +245,9 @@ a:hover {
 
 #contacto form span {
     box-sizing: border-box;
-    width: 50%;
+    width: 45%;
     text-align: center;
+    padding: 10px;
     cursor: default;
 }
 
@@ -264,6 +266,7 @@ select {
     background-color: #ffffffdc;
     border: 1px solid #2f2f2f;
     padding: 5px;
+    margin: 5px;
 }
 
 form label {
@@ -275,6 +278,7 @@ form label {
 }
 
 textarea {
+    width: 90%;
     resize: none;
     height: 100px;
 }
