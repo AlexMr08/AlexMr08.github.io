@@ -402,12 +402,6 @@ button {
         justify-content: center;
     }
 
-    #galeria img {
-        margin: 10px 0px;
-        width: 90%;
-        max-width: initial;
-    }
-
     #galeria article {
         width: 95%;
         margin: 5px 0px;
@@ -417,6 +411,7 @@ button {
     }
 
     #galeria article img {
+        margin: 10px 0px;
         width: 100%;
         border-radius: 10px;
         border: #808080 solid 1px;
