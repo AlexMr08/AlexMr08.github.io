@@ -5,8 +5,7 @@ html {
 
 body {
     width: 100%;
-    background-color: #FDFDFD;
-    color: #000000;
+    background: #fdfdfd;
     margin: 0%;
     padding: 60px 0px 0px 0px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -23,8 +22,7 @@ body {
 }
 
 nav {
-    width: 100%;
-    background-color: #111111;
+    background: #111111;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +38,6 @@ nav span {
 nav span a {
     padding: 10px;
     font-size: 1.5em;
-    font-weight: bold;
 }
 
 /*Fin cabecera*/
@@ -52,7 +49,7 @@ main {
 }
 
 main section {
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
 /*Fin main*/
@@ -64,7 +61,7 @@ main section {
 #contacto,
 #principal {
     box-sizing: border-box;
-    background-color: #eeeeee;
+    background: #eeeeee;
     border-radius: 10px;
     padding: 10px 0px;
     width: 100%;
@@ -81,28 +78,17 @@ main section {
     text-align: center;
 }
 
-h2 {
-    padding: 2px 0;
-    margin: 0%;
-}
-
-h3 {
-    padding: 2px 0;
-    margin: 0%;
-    font-size: 1.5em;
+h2.h3,h4,h5{
+    padding: 2px 0; 
 }
 
 h4 {
-    padding: 2px 0;
-    margin: 0%;
     color: #ff0062;
 }
 
 h5 {
-    padding: 2px 0;
-    margin: 0%;
-    color: #141414d8;
-    font-weight: bold;
+    color: #000000ce;
+    font-weight: 700;
 }
 
 /*Fin fuentes predefinidas*/
@@ -118,11 +104,13 @@ a:hover {
     text-decoration: underline;
 }
 
+a:active{
+    color: #ff0062;
+}
 /*Fin enlaces*/
 
 /*Inicio Tracked*/
 #principal img {
-    min-width: 50px;
     width: 35%;
     max-width: 500px;
     float: right;
@@ -134,6 +122,7 @@ a:hover {
 #principal p,
 #principal h3 {
     margin: 10px;
+    padding: 5px;
     text-align: justify;
 }
 
@@ -189,14 +178,14 @@ a:hover {
 
 /*Inicio datos*/
 #datos table {
-    border: solid 1px #808080;
+    border: #808080 1px solid;
     text-align: center;
     border-collapse: collapse;
     border-spacing: 0;
     cursor: default;
     width: 95%;
     margin: 5px auto;
-    box-shadow: 4px 3px 13px 1px rgba(0, 0, 0, 0.342);
+    box-shadow: 0 0px 10px 2px #808080;
 }
 
 #datos thead,
@@ -220,15 +209,11 @@ a:hover {
 }
 
 #datos tbody tr:nth-child(2n+1) {
-    background-color: #dfdfdf;
+    background: #dfdfdf;
 }
 
-#datos tbody tr:hover {
-    background-color: #ff00621a !important;
-}
-
-#datos tbody td:hover {
-    background: #ff00621a;
+#datos tbody tr:hover, #datos tbody td:hover {
+    background: #ff00621a ;
 }
 
 /*Fin datos*/
@@ -238,16 +223,15 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 5px;
 }
 
 #contacto form span {
     box-sizing: border-box;
     width: 45%;
     text-align: center;
-    padding: 10px;
+    margin: auto;
     cursor: default;
 }
 
@@ -262,11 +246,11 @@ select {
     width: 100%;
     border-radius: 5px;
     box-sizing: border-box;
-    vertical-align: text-top;
-    background-color: #ffffffdc;
-    border: 1px solid #2f2f2f;
+    vertical-align: middle;
+    background: #ffffff;
+    border: #808080 1px solid;
     padding: 5px;
-    margin: 5px;
+    margin: 5px auto;
 }
 
 form label {
@@ -278,7 +262,7 @@ form label {
 }
 
 textarea {
-    width: 90%;
+    width: 95%;
     resize: none;
     height: 100px;
 }
@@ -308,21 +292,24 @@ form select:focus {
 
 #pie {
     display: flex;
-    width: 100%;
     color: #ff0062;
-    background-color: #111111;
+    background: #111111;
     justify-content: space-around;
 }
 
-#pie .datos {
+#pie .apartados {
     box-sizing: border-box;
     max-width: 25%;
+    text-align: center;
+}
+
+li{
+    text-align: left;
 }
 
 /*Fin pie*/
 
 /*Inicio media*/
-
 @media (max-width:768px) {
 
     /*Inicio media nav y pie*/
@@ -336,7 +323,7 @@ form select:focus {
         flex-wrap: wrap;
     }
 
-    #pie>.datos {
+    #pie>.apartados {
         max-width: unset;
         width: 50%;
         padding: 0px 15px;
@@ -346,8 +333,8 @@ form select:focus {
     /*fin media nav y pie*/
 
     /*Inicio media main*/
-    body{
-        padding: 100px 0px 0px 0px;
+    body {
+        padding: 90px 0px 0px 0px;
     }
 
     main {
@@ -372,7 +359,6 @@ form select:focus {
     #galeria img {
         width: 100%;
         max-width: unset;
-        /**/
     }
 
     /*Fin media galeria*/
