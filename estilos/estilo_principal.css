@@ -123,16 +123,13 @@ a:hover {
     width: 35%;
     max-width: 500px;
     float: right;
-    margin: 0px 15px 0px 10px;
+    margin: 0px 15px 0px 5px;
     box-sizing: border-box;
     border-radius: 10px;
 }
 
+#principal p,
 #principal h3 {
-    margin: 10px;
-}
-
-#principal p {
     margin: 10px;
     text-align: justify;
 }
@@ -150,7 +147,7 @@ a:hover {
 #albumes article {
     width: 40%;
     box-sizing: border-box;
-    padding: 0px 10px;
+    padding: 5px 10px;
     text-align: center;
 }
 
@@ -179,9 +176,10 @@ a:hover {
 #galeria img {
     max-width: 300px;
     box-sizing: border-box;
-    margin: 5px;
+    margin: 0px 0px 10px 0px;
     border: #808080 1px solid;
     box-shadow: 0 0px 10px 2px #808080;
+    border-radius: 10px;
 }
 
 /*Fin galeria*/
@@ -294,7 +292,8 @@ form select:focus {
     box-shadow: 0 0 3px 1px #ff0062;
 }
 
-form input[type=radio] {
+#genero input,
+#prot_datos {
     box-shadow: none;
 }
 
@@ -338,37 +337,36 @@ form input[type=radio] {
         padding: 0px 15px;
 
     }
+
     /*fin media nav y pie*/
 
     /*Inicio media main*/
     main {
         width: 95%;
-        margin: 60px auto 0px;
+        margin: auto;
         box-sizing: border-box;
     }
+
     /*Fin media main*/
 
-    /*Inicio Media albumes*/
-
-    /*Fin media albumes*/
-
-    /*Inicio media galeria*/
-    #galeria {
-        width: 100%;
-    }
-
-    #galeria article, #albumes article, #principal article {
+    /*Inicio media comunes*/
+    #galeria article,
+    #albumes article,
+    #principal article {
         width: 95%;
         margin: 5px auto;
         padding: 5px 20px;
     }
 
-    #galeria article img {
-        margin: 10px 0px;
+    /*Fin media comunes*/
+
+    /*Inicio media galeria*/
+    #galeria img {
         width: 100%;
-        border: #808080 solid 1px;
-        max-width: unset; /**/
+        max-width: unset;
+        /**/
     }
+
     /*Fin media galeria*/
 
     /*Inicio media principal*/
@@ -388,8 +386,7 @@ form input[type=radio] {
 
     /*Inicio media datos*/
     #datos table {
-        font-size: 0.5em;
-        width: 100%;
+        font-size: 0.6em;
     }
 
     #datos table {
@@ -399,12 +396,15 @@ form input[type=radio] {
     .samp {
         display: none;
     }
+
     /*Fin media datos*/
 
     /*Inicio media contacto*/
     #contacto form span {
         width: 100%;
     }
+
     /*Fin media contacto*/
 }
+
 /*Fin media*/
